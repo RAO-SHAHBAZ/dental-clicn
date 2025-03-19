@@ -35,7 +35,7 @@ export default function EmergencyRepairs() {
           </p>
           <a
             href="/emergency-repairs"
-            className="bg-[#319684] text-[#FFFFFF] px-8 py-4 inline-block uppercase font-medium"
+            className="bg-[#319684] text-[#FFFFFF] px-25 py-4 inline-block uppercase font-medium"
           >
             LEARN MORE
           </a>

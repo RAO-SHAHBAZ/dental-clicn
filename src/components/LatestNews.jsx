@@ -1,62 +1,72 @@
 export default function LatestNews() {
-    const news = [
-      {
-        image: "/placeholder-news.jpg",
-        title: "Appropriately productize",
-        date: "Jan 21, 2019",
-        comments: "45 Comments",
-        shares: "10 Share",
-        excerpt: "Some quick example text to build on the",
-      },
-      {
-        image: "/placeholder-news.jpg",
-        title: "Quickly formulate backend",
-        date: "May 26, 2019",
-        comments: "30 Comments",
-        shares: "5 Share",
-        excerpt: "Synergistically engage effective ROI after",
-      },
-      {
-        image: "/placeholder-news.jpg",
-        title: "Objectively extend extensive",
-        date: "Apr 25, 2019",
-        comments: "41 Comments",
-        shares: "30 Share",
-        excerpt: "Holisticly mesh open-source leadership",
-      },
-      {
-        image: "/placeholder-news.jpg",
-        title: "Appropriately productize",
-        date: "Jan 21, 2019",
-        comments: "45 Comments",
-        shares: "10 Share",
-        excerpt: "Some quick example text to build on the",
-      },
-    ]
-  
-    return (
-      <section className="py-16 md:py-24 border-t">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-4">Our Latest News</h2>
-          <p className="text-center text-gray-600 mb-2">
-            Enthusiastically drive revolutionary opportunities before emerging leadership.
-          </p>
-          <p className="text-center text-gray-600 mb-16">
-            Distinctively transform tactical methods of empowerment via resource.
-          </p>
-  
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {news.map((item, index) => (
-              <div key={index} className="mb-8">
-                <img src={item.image || "/placeholder-news.jpg"} alt={item.title} className="w-full h-auto mb-4" />
-                <h3 className="text-xl font-medium mb-2">{item.title}</h3>
-                <div className="flex text-sm text-gray-500 mb-2">
-                  <span className="mr-2">• {item.date}</span>
-                  <span className="mr-2">• {item.comments}</span>
+  const news = [
+    {
+      image: "src/assets/image 5.png",
+      title: "Appropriately productize",
+      date: "Jan 21, 2019",
+      comments: "45 Comments",
+      shares: "10 Shares",
+      excerpt: "Some quick example text to build on the",
+    },
+    {
+      image: "src/assets/image 6.png",
+      title: "Quickly formulate backend",
+      date: "May 26, 2019",
+      comments: "30 Comments",
+      shares: "5 Shares",
+      excerpt: "Synergistically engage effective ROI after",
+    },
+    {
+      image: "src/assets/image 7.png",
+      title: "Objectively extend extensive",
+      date: "Apr 25, 2019",
+      comments: "41 Comments",
+      shares: "30 Shares",
+      excerpt: "Holistically mesh open-source leadership",
+    },
+    {
+      image: "src/assets/image 5.png",
+      title: "Appropriately productize",
+      date: "Jan 21, 2019",
+      comments: "45 Comments",
+      shares: "10 Shares",
+      excerpt: "Some quick example text to build on the",
+    },
+  ];
+
+  return (
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-4">
+        {/* Heading Section */}
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4">
+          Our Latest News
+        </h2>
+        <p className="text-center text-gray-500 mb-2">
+          Enthusiastically drive revolutionary opportunities before emerging leadership.
+        </p>
+        <p className="text-center text-gray-500 mb-12">
+          Distinctively transform tactical methods of empowerment via resource.
+        </p>
+
+        {/* News Cards Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {news.map((item, index) => (
+            <div key={index} className="bg-white shadow rounded-lg overflow-hidden">
+              {/* News Image */}
+              <img src={item.image} alt={item.title} className="w-full h-52 object-cover" />
+
+              {/* News Content */}
+              <div className="p-6">
+                <p className="text-lg font-semibold mb-2">{item.title}</p>
+                <div className="text-sm text-gray-500 mb-2 flex flex-wrap gap-2">
+                  <span>• {item.date}</span>
+                  <span>• {item.comments}</span>
                   <span>• {item.shares}</span>
                 </div>
-                <p className="text-gray-600 mb-2">{item.excerpt}</p>
-                <a href="#" className="text-[#1d5c5c] inline-flex items-center">
+                <p className="text-gray-600 mb-4">{item.excerpt}</p>
+
+                {/* Read More Link */}
+                <a href="#" className="text-[#1d5c5c] font-semibold flex items-center gap-1">
                   Read more
                   <svg
                     className="ml-1"
@@ -76,11 +86,10 @@ export default function LatestNews() {
                   </svg>
                 </a>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
-    )
-  }
-  
-  
+      </div>
+    </section>
+  );
+}

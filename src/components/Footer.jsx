@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Instagram, ChevronRight } from "lucide-react"
 import logo from '../assets/Footer/footer.png'
+import fb from '../assets/Footer/fb.png'
 
 export default function Footer() {
   return (
@@ -134,13 +135,13 @@ export default function Footer() {
             </ul>
 
             <div className="flex gap-4 mt-6">
-              <a href="#" className="h-8 w-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
-                <Facebook className="h-4 w-4" />
+              <a href="#" className="h-8 w-8 rounded-full bg-[#316161] bg-opacity-70 flex items-center justify-center">
+                <img src={fb} alt="fb" />
               </a>
-              <a href="#" className="h-8 w-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+              <a href="#" className="h-8 w-8 rounded-full bg-[#316161] bg-opacity-20 flex items-center justify-center">
                 <Twitter className="h-4 w-4" />
               </a>
-              <a href="#" className="h-8 w-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+              <a href="#" className="h-8 w-8 rounded-full bg-[#316161] bg-opacity-20 flex items-center justify-center">
                 <Instagram className="h-4 w-4" />
               </a>
             </div>

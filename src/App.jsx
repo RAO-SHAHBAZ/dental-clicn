@@ -6,11 +6,11 @@ import WhyChooseUs from "./components/WhyChooseUs"
 import ShareStory from "./components/ShareStory"
 import Testimonials from "./components/Testimonials"
 import OurTeam from "./components/OurTeam"
-import PartnerLogos from "./components/PartnerLogos"
 import LatestNews from "./components/LatestNews"
 import AboutUs from "./components/AboutUs"
 import ContactUs from "./components/ContactUs"
 import Footer from "./components/Footer"
+import ServicesSection from "./components/PartnerLogos"
 
 function App() {
   return (
@@ -19,14 +19,14 @@ function App() {
       <Hero />
       <AboutUs />
       <Services />
-      <EmergencyRepairs />
+      <ShareStory />
+      <Testimonials />
       {/* <WhyChooseUs /> */}
-      {/* <ShareStory /> */}
-      {/* <Testimonials /> */}
-      {/* <OurTeam /> */}
-      {/* <PartnerLogos /> */}
-      {/* <LatestNews /> */}
+      <OurTeam />
+      <EmergencyRepairs />
       <ContactUs />
+      <ServicesSection />
+      <LatestNews />
       <Footer />
     </div>
   )
